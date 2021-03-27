@@ -143,8 +143,10 @@ class DataLoadPreprocess(Dataset):
                 has_valid_depth = False
                 try:
                     depth_gt = Image.open(depth_path)
+                    print("TRUE depth_path", depth_path)
                     has_valid_depth = True
                 except IOError:
+                    print("FALSE depth_path", depth_path)
                     depth_gt = False
                     # print('Missing gt for {}'.format(image_path))
 
