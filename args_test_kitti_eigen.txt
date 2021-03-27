@@ -1,4 +1,4 @@
---data_path ../dataset/kitti/raw/
+--data_path ../monodepth2/kitti_data/
 --gt_path ../dataset/kitti/gts/
 --filenames_file ./train_test_inputs/kitti_eigen_train_files_with_gt.txt
 
@@ -7,7 +7,7 @@
 --min_depth 1e-3
 --max_depth 80
 
---data_path_eval ../dataset/kitti/raw/
+--data_path_eval ../monodepth2/kitti_data/
 --gt_path_eval ../dataset/kitti/gts/
 --filenames_file_eval ./train_test_inputs/kitti_eigen_test_files_with_gt.txt
 --min_depth_eval 1e-3
